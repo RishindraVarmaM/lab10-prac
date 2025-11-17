@@ -33,7 +33,7 @@ jobs:
           file: ./BACKEND-SPORTS/backend.Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ secrets.DOCKER_USERNAME }}/lab10-backend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/lab10-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -43,4 +43,4 @@ jobs:
           file: ./FRONTEND-SPORTS/frontend.Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ secrets.DOCKER_USERNAME }}/lab10-frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/lab10-frontend:latest
